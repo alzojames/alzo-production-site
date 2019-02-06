@@ -34,7 +34,27 @@ body {
   left: 75%;
   transform: translate(-50%, -50%);
   color: white;
+  text-emphasis-color: white;
 }
+.button-white {
+  background-color: #eee; /* Green */
+  border: 0.1em solid #FFFFFF;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius:2em;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.button-white:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  border: 0.1em solid #eee;
+  }
 
 .about-me {
   background-color: white;
@@ -105,7 +125,12 @@ body {
   float: right;
   padding: 35px 70px 50px;
 }
-
+.hobby{
+  background-color: #eee  ;
+  padding: 1em 1em 1em 1em;
+  align-items: center;
+  width: 100%;
+}
 .projectTable{
   margin: 0px auto;
 }
@@ -166,3 +191,6 @@ ul {
   box-shadow: 1px -2px 4px rgba(0, 0, 0, .5);
 }
 
+/* .resume{
+  display:
+} */
