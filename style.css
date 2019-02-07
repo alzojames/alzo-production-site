@@ -2,8 +2,12 @@ body {
   margin: 0;
   font-family: sans-serif;
   overflow-x: hidden;
+  font-family: "Helvetica", Arial, sans-serif;
+  background-color: #eee;
 }
-
+h2{
+  color: #CC675B;
+}
 .my-nav{
   padding-left: 10PX;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
@@ -19,8 +23,7 @@ body {
   align-items: center;
   /* Text styles */
   text-align: center;
-  /* Background styles */
-  background-image: url('./images/hero.jpg');
+  background-image: url('./images/hero3.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -34,81 +37,140 @@ body {
   left: 75%;
   transform: translate(-50%, -50%);
   color: white;
+  text-emphasis-color: white;
 }
+.button-white {
+  background-color: #eee; /* Green */
+  border: 0.1em solid #FFFFFF;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius:2em;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.button-white:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  border: 0.1em solid #eee;
+  }
 
 .about-me {
-  background-color: white;
-  font: Helvetica;
+  background-color: #eee;
   text-align: center;
-  padding: 35px 200px 50px;
+  padding: 10em 10em 10em 10em;
 }
 .about-me p{
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 .about-me h2{
   padding-top: 40px;
 }
-
-.photography {
-  align-content: center;
-  background-color: #fafafa;
-  font: Helvetica;
-  text-align: center;
-  border-color: red;
-  width: 100%;
-  padding: 35px 200px 120px;
-
-}
-.photography h2{
-  padding-top: 40px;
-}
-.photography p{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  width: 100%;
-}
-
-.cars {
-  background-color: white;
-  font: Helvetica;
-  text-align: center;
-  padding: 35px 200px 100px;
-
-}
-.cars h2{
-  padding-top: 40px;
-}
-.cars p{
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 .responsive {
   max-width: 100%;
   height: auto;
-
 }
 
-.imgCont{
-  width: 100%;
-  border: 100px solid #8a4419;
-  border-style: inset;
+.container{
+  font-family: "Helvetica", Arial, sans-serif;
+  display: inline;
+  padding: 2px 16px;
+  justify-content: center;
+  text-align: center;
+  /* padding: 15em 15em 15em 15em; */
+}
+.container p{
+  padding: 2px 16px;
 }
 
 .float_left{
   float: left;
-  padding: 35px 70px 50px;
 }
 
-.float_right{
-  float: right;
-  padding: 35px 70px 50px;
+.hobby{
+  background-color: #eee  ;
+  padding: 1em 1em 1em 1em;
+  align-items: center;
+  width: 100%;
+}
+.projectTable{
+  margin: 0px auto;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+table {
+  font-family: "Helvetica", Arial, sans-serif;
+  width: 80%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em 1em 1em 1em;
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+table td, table th {
+  padding: 8px;
+}
+table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:hover {background-color: #ddd;}
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgb(153, 153, 153);
+  color: white;
+}
+
+.card{
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  width: 44em;
+  border-color: white;
+}
+
+#hobby-list, #car-list {
+  list-style-type: none;
+  display:flex;
+  margin:0 auto;
+  width:80%;
+}
+.hovereffect:hover{
+  background-color:#ddd
+}
+
+
+#individual-hobby li {
+  float: left;
+  align-items: center;
+}
+li + li{
+  margin-left:10em;
 }
 
 .footer{
-  align-content: center;
-  background-color: aqua;
+  text-align: center;
+  background-color: #CC675B;
   padding: 10px 200px 10px;
-   box-shadow: 1px -2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px -2px 4px rgba(0, 0, 0, .5);
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: green;
+}
+.resume{
+  justify-content: center;
+  padding: 0.5em;
+  margin: auto;
+}
+.resume h2{
+  text-align: center;
 }
